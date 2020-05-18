@@ -28,6 +28,17 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+.navigation{
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.item a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
 body {
 	line-height: 1;
 }
@@ -82,7 +93,8 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
+    padding-top: 20px; 
 }
 
 .middle-content {
@@ -111,6 +123,46 @@ p {
     align-items: center;
     justify-content: center;
 }
+/* Changing box background colors */
+.middle-content .boxes .box:nth-of-type(1){
+    background-color: teal;
+}
+
+.middle-content .boxes .box:nth-of-type(2){
+    background-color: gold;
+}
+
+.middle-content .boxes .box:nth-of-type(3){
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .box:nth-of-type(4){
+    background-color: coral;
+}
+
+.middle-content .boxes .box:nth-of-type(5){
+    background-color: crimson;
+}
+
+.middle-content .boxes .box:nth-of-type(6){
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box:nth-of-type(7){
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box:nth-of-type(8){
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box:nth-of-type(9){
+    background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-of-type(10){
+    background-color: dodgerblue;
+}
 
 .bottom-content {
     display: flex;
@@ -130,7 +182,9 @@ footer {
     width: 100%;
     background: black;
 }
-
+#header-image{
+    margin: auto;
+}
 footer nav {
     width: 60%;
     display: flex;
@@ -143,4 +197,30 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 500px){
+    .container{
+        width: 500px;
+    }
+    .navigation{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .item{
+        padding: 2px;
+    }
+    #header-image{
+        width: 500px;
+    }
+    .top-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .middle-content .boxes{
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 0px auto;
+    }
+    
 }
