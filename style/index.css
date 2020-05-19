@@ -250,5 +250,36 @@ footer nav a {
         padding: 5px;
         font-size: larger;
     }
-    
+}
+@media (max-width: 800px){
+    .top-content{
+        flex-direction: column;
+    }
+    .top-content .text-container{
+        width: 100%;
+    }
+    .middle-content .boxes{
+        width: 30%;
+        align-content: center;
+        flex-grow: initial;
+        align-content: center;
+        margin: 0px 250px;
+    }
+    .middle-content .boxes .box{
+        padding:50px;
+        margin: 10px 2.5%;
+    }
+    .bottom-content{
+        align-items: center;
+        align-content: center;
+    }
+    .bottom-content .text-container:last-child{
+        align-self: flex-start;
+    }
+    )
+    footer nav{
+        padding: 20px 4%;
+        align-content: center;
+        margin: 0px 100px;
+    }
 }
